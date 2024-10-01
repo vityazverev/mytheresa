@@ -2,6 +2,7 @@ import os
 import subprocess
 import sys
 
+
 def install_dependencies():
     """Install dependencies from requirements.txt."""
     try:
@@ -12,6 +13,7 @@ def install_dependencies():
         print("Failed to install dependencies.")
         sys.exit(1)
 
+
 def run_tests():
     """Run pytest to execute all tests."""
     try:
@@ -21,6 +23,7 @@ def run_tests():
     except subprocess.CalledProcessError:
         print("Some tests failed.")
         sys.exit(1)
+
 
 if __name__ == "__main__":
     install_dependencies()
